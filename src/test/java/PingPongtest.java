@@ -14,4 +14,10 @@ public class PingPongtest {
     PingPong pingPong = new PingPong();
     assertEquals("pong", pingPong.decision(5));
   }
+
+  @Test
+  public void pingOrPongDecision_forNumberDivisibleByFifteen_pingpong() {
+    PingPong pingPong = new PingPong();
+    assertEquals("pingpong", pingPong.decision(15));
+  }
 }
